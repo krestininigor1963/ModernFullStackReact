@@ -5,6 +5,7 @@ import { PostList } from '../components/PostList.jsx'
 import { useQuery } from '@tanstack/react-query'
 import { getPosts } from '../api/posts.js'
 import { useState } from 'react'
+import { Helmet } from 'react-helmet-async'
 //import PropTypes from 'prop-types'
 
 import { Header } from '../components/Header.jsx'
@@ -27,6 +28,13 @@ export function Blog() {
 
   return (
     <div className='main_window'>
+      <Helmet>
+        <title>Full-Stack React Blog</title>
+        <meta
+          name='description'
+          content='A blog full of articles about full-stack React development.'
+        />
+      </Helmet>
       <Header />
       <br />
       <hr />
