@@ -1,2 +1,0 @@
-docker run -d --name dbserver -p 27017:27017 --restart unless-
-stopped mongo:6.0.4
